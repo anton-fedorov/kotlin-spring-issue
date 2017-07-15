@@ -1,0 +1,21 @@
+group 'io.test'
+version '1.0-SNAPSHOT'
+
+apply from: 'local_plugin.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:$spring_version"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test:$spring_version"
+    testCompile "org.testng:testng:$testng_version"
+}
+
+test {
+    useTestNG()
+}
