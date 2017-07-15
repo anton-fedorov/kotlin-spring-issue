@@ -59,3 +59,6 @@ With this command, test successfully passes, which means that `kotlin-spring` pl
 It seems that if you do the same trick with referring to `local_plugin.gradle` from subproject `build.gradle` 
 instead of root `build.gradle`, then it works fine. 
 Maybe `SpringGradleSubplugin` currently works only with subprojects? 
+
+# Notes
+Note, that since gradle spring plugin is used, we can't refer to `kotlin` and `kotlin-spring` plugins by names, so full class names are applied
