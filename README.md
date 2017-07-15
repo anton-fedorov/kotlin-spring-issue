@@ -7,7 +7,7 @@ Root `build.gradle` file defines `buildscript` from external script plugin via:
 ```
 apply from: 'local_plugin.gradle'
 ```
-In this case, `kotling-spring` plugin doesn't work properly, as main `@SpringBootApplication` class 
+In this case, `kotlin-spring` plugin doesn't work properly, as main `@SpringBootApplication` class 
 `HelloNotWorkingApp` keeps being final, while it should become open during compilation.
 
 ## Reproduce issue
